@@ -19,19 +19,19 @@
         background: url("assets/github\ regular\ \(Pixel\ perfect\).png") no-repeat;
         background-size: contain;
         position: fixed;
-        width: 50px;
-        height: 50px;
-        left: 44px;
-        top: 125px;
+        width: 8vh;
+        height: 8vh;
+        left: 6.5vh;
+        top: 17vh;
     }
     100% {
         background: url("assets/github\ hover.png");
         background-size: contain;
         position: fixed;
-        width: 50px;
-        height: 50px;
-        left: 44px;
-        top: 125px;
+        width: 8vh;
+        height: 8vh;
+        left: 6.5vh;
+        top: 17vh;
     }
 }
 
@@ -40,19 +40,19 @@
         background: url("assets/linkedin\ regular\ \(Freepik\).png");
         background-size: contain;
         position: fixed;
-        width: 50px;
-        height: 50px;
-        left: 44px;
-        top: 200px
+        width: 8vh;
+        height: 8vh;
+        left: 6.5vh;
+        top: 28vh
     }
     100% {
         background: url("assets/linkedin\ hover.png");
         background-size: contain;
         position: fixed;
-        width: 50px;
-        height: 50px;
-        left: 44px;
-        top: 200px;
+        width: 8vh;
+        height: 8vh;
+        left: 6.5vh;
+        top: 28vh;
     }
 }
 
@@ -61,19 +61,19 @@
         background: url("assets/email\ regular\ \(Ehtisham\ Abid\).png") no-repeat;
         background-size: contain;
         position: fixed;
-        width: 50px;
-        height: 50px;
-        left: 44px;
-        top: 275px;
+        width: 8vh;
+        height: 8vh;
+        left: 6.5vh;
+        top: 39vh;
     }
     100% {
         background: url("assets/email\ hover.png");
         background-size: contain;
         position: fixed;
-        width: 50px;
-        height: 50px;
-        left: 44px;
-        top: 275px;
+        width: 8vh;
+        height: 8vh;
+        left: 6.5vh;
+        top: 39vh;
     }
 }
 
@@ -82,8 +82,8 @@
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 12px;
+    width: 2vh;
+    height: 2vh;
     background-color: var(--main);
 }
 ::-webkit-scrollbar-track {
@@ -93,7 +93,7 @@
 }
 ::-webkit-scrollbar-thumb {
     animation: fadein 0.3s;
-    border-radius: 10px;
+    border-radius: 1vh;
     background: var(--highlight);
 }
 
@@ -110,7 +110,7 @@ body {
 h1 {
     font-family: 'Abril Fatface', cursive;
     font-weight: normal;
-    font-size: 10vh;
+    font-size: 11vh;
 }
 
 h2 {
@@ -123,6 +123,11 @@ h2 {
 h3 {
     font-weight: normal;
     font-size: 4vh;
+}
+
+h4 {
+    font-family: 'Anonymous Pro', mono;
+    font-size: 3.5vh;
 }
 
 .vl {
@@ -146,20 +151,20 @@ h3 {
     background: url("assets/github\ regular\ \(Pixel\ perfect\).png") no-repeat;
     background-size: contain;
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 44px;
-    top: 125px;
+    width: 8vh;
+    height: 8vh;
+    left: 6.5vh;
+    top: 17vh;
 
 }
 .github:hover{
     background: url("assets/github\ hover.png");
     background-size: contain;
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 44px;
-    top: 125px;
+    width: 8vh;
+    height: 8vh;
+    left: 6.5vh;
+    top: 17vh;
     animation: git 0.3s;
 }
 
@@ -167,19 +172,19 @@ h3 {
     background: url("assets/linkedin\ regular\ \(Freepik\).png");
     background-size: contain;
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 44px;
-    top: 200px
+    width: 8vh;
+    height: 8vh;
+    left: 6.5vh;
+    top: 28vh;
 }
 .linkedin:hover{
     background: url("assets/linkedin\ hover.png");
     background-size: contain;
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 44px;
-    top: 200px;
+    width: 8vh;
+    height: 8vh;
+    left: 6.5vh;
+    top: 28vh;
     animation: linked 0.3s;
 }
 
@@ -187,19 +192,19 @@ h3 {
     background: url("assets/email\ regular\ \(Ehtisham\ Abid\).png");
     background-size: contain;
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 44px;
-    top: 275px;
+    width: 8vh;
+    height: 8vh;
+    left: 6.5vh;
+    top: 39vh;
 }
 .email:hover{
     background: url("assets/email\ hover.png");
     background-size: contain;
     position: fixed;
-    width: 50px;
-    height: 50px;
-    left: 44px;
-    top: 275px;
+    width: 8vh;
+    height: 8vh;
+    left: 6.5vh;
+    top: 39vh;
     animation: em 0.3s;
 }
 
@@ -223,4 +228,16 @@ h3 {
     border: 10vh solid;
     border-color: var(--main);
     text-align: right;
+}
+
+.about {
+    background: var(--main);
+    position:static;
+    border: 10vh solid;
+    border-color: var(--main);
+    width: 132.9vh;
+    height: 100vh;
+    margin-top: 5%;
+    margin-left: 15%;
+    
 }
