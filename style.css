@@ -1,10 +1,10 @@
 /* Colour Palette */
 :root {
-    --background:#2f3e46;
-    --text:#F2EFEB;
-    --accent:#84a98c;
-    --mid1:#52796f;
-    --mid2:#354f52;
+    --background:#eee9e0ff;
+    --main:#4c694dff;
+    --text:#eee9e0ff;
+    --accent:#835f1f;
+    --highlight:#b7caa1;
 }
 
 
@@ -14,32 +14,87 @@
     100% {opacity: 1;}
 }
 
+@keyframes git {
+    0% {
+        background: url("assets/github\ regular\ \(Pixel\ perfect\).png") no-repeat;
+        background-size: contain;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 44px;
+        top: 125px;
+    }
+    100% {
+        background: url("assets/github\ hover.png");
+        background-size: contain;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 44px;
+        top: 125px;
+    }
+}
+
+@keyframes linked {
+    0% {
+        background: url("assets/linkedin\ regular\ \(Freepik\).png");
+        background-size: contain;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 44px;
+        top: 200px
+    }
+    100% {
+        background: url("assets/linkedin\ hover.png");
+        background-size: contain;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 44px;
+        top: 200px;
+    }
+}
+
+@keyframes em {
+    0% {
+        background: url("assets/email\ regular\ \(Ehtisham\ Abid\).png") no-repeat;
+        background-size: contain;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 44px;
+        top: 275px;
+    }
+    100% {
+        background: url("assets/email\ hover.png");
+        background-size: contain;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        left: 44px;
+        top: 275px;
+    }
+}
+
 ::selection {
-    color: var(--accent);
+    color: var(--highlight);
 }
 
 ::-webkit-scrollbar {
     width: 8px;
     height: 12px;
-    background-color: transparent;
+    background-color: var(--main);
 }
 ::-webkit-scrollbar-track {
     animation: fadein 0.3s;
     border: thin solid;
-    color: transparent;
+    color: var(--highlight);
 }
 ::-webkit-scrollbar-thumb {
     animation: fadein 0.3s;
     border-radius: 10px;
-    background: transparent;
-}
-::-webkit-scrollbar-track:hover {
-    animation: fadein 0.3s;
-    color: var(--mid2);
-} 
-::-webkit-scrollbar-thumb:hover {
-    animation: fadein 0.3s;
-    background: var(--text);
+    background: var(--highlight);
 }
 
 /* Classes */
@@ -47,4 +102,125 @@ body {
     background-color: var(--background);
     color: var(--text);
     animation: fadein 1.5s;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+    font-size: 12vh;
+}
+
+h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-weight: normal;
+    font-size: 10vh;
+}
+
+h2 {
+    font-family: 'Anonymous Pro', mono;
+    font-weight: bold;
+    font-size: 5vh;
+    margin-top: 0%;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 4vh;
+}
+
+.vl {
+    border-left: 2px solid;
+    border-color: var(--accent);
+    height: 50vh;
+    position: fixed;
+    left: 10vh;
+    bottom: 0px;
+  }
+
+.hl {
+    height: 2px;
+    width: 750px;
+    background: var(--accent);
+}
+
+
+/* Settings for images */
+.github{
+    background: url("assets/github\ regular\ \(Pixel\ perfect\).png") no-repeat;
+    background-size: contain;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 44px;
+    top: 125px;
+
+}
+.github:hover{
+    background: url("assets/github\ hover.png");
+    background-size: contain;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 44px;
+    top: 125px;
+    animation: git 0.3s;
+}
+
+.linkedin {
+    background: url("assets/linkedin\ regular\ \(Freepik\).png");
+    background-size: contain;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 44px;
+    top: 200px
+}
+.linkedin:hover{
+    background: url("assets/linkedin\ hover.png");
+    background-size: contain;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 44px;
+    top: 200px;
+    animation: linked 0.3s;
+}
+
+.email {
+    background: url("assets/email\ regular\ \(Ehtisham\ Abid\).png");
+    background-size: contain;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 44px;
+    top: 275px;
+}
+.email:hover{
+    background: url("assets/email\ hover.png");
+    background-size: contain;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 44px;
+    top: 275px;
+    animation: em 0.3s;
+}
+
+.leaves {
+    background: url("assets/leaves.jpg") no-repeat;
+    position: static;
+    background-size: cover;
+    width: 52.9vh;
+    height: 105vh;
+    margin-top: -3%;
+    margin-left: 71%;
+}
+
+.title {
+    background: var(--main);
+    position: static;
+    margin-top: -50%;
+    margin-left: 15%;
+    width: 120vh;
+    height: 60vh;
+    border: 10vh solid;
+    border-color: var(--main);
+    text-align: right;
 }
