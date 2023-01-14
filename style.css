@@ -426,3 +426,80 @@ p {
     margin-left: 50%;
     margin-top: -7.5%;
 }
+
+/* 1920px Screen Media Query */
+
+@media only screen and (max-width: 1920px) {
+    .curve_line {
+        height: 74vh;
+        width: 40vh;
+        border: 0.3vh solid;
+        border-top-left-radius: 10vh;
+        border-top-right-radius: 10vh;
+        border-color: var(--accent);
+        position: absolute;
+        margin-top: -21%;
+        margin-left: -1.5%;
+    }
+    .l3 {
+        margin-left: 22.5% !important;
+    }
+    .l4 {
+        margin-left: 46.5% !important;
+    }
+
+    
+    .title {
+        background: var(--main);
+        position: static;
+        margin-top: -44.6%;
+        margin-left: 15%;
+        width: 120vh;
+        height: 60vh;
+        border: 10vh solid;
+        border-color: var(--main);
+        text-align: right;
+        animation: fadein 1.5s;
+    }
+
+    .leaves {
+        background: url("assets/leaves.jpg") no-repeat;
+        position: static;
+        background-size: cover;
+        width: 59.2vh;
+        height: 106vh;
+        margin-top: -3%;
+        margin-left: 71%;
+        animation: fadein 1.5s;
+    }
+
+    .ellipsis {
+        color:var(--main);
+        font-size: 20vh;
+        margin-left: 46.5%;
+        margin-top: -7.5%;
+    }
+}
+
+/* Phone Media Query*/
+@media only screen and (max-width: 600px) {
+    .github {
+        display:none;
+    }
+    .linkedin {
+        display:none;
+    }
+    .email {
+        display:none;
+    }
+    .vl {
+        display:none;
+    }
+    .navi {
+        display:none;
+    }
+    .leaves {
+        display:none;
+    }
+}
+
