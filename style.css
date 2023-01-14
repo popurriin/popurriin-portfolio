@@ -34,6 +34,26 @@
         top: 17vh;
     }
 }
+@keyframes git2 {
+    0% {
+        background: url("assets/github\ hover.png");
+        background-size: contain;
+        position: fixed;
+        width: 8vh;
+        height: 8vh;
+        left: 4vh;
+        top: 17vh;
+    }
+    100% {
+        background: url("assets/github\ regular\ \(Pixel\ perfect\).png") no-repeat;
+        background-size: contain;
+        position: fixed;
+        width: 8vh;
+        height: 8vh;
+        left: 4vh;
+        top: 17vh;
+    }
+}
 
 @keyframes linked {
     0% {
@@ -53,6 +73,27 @@
         height: 8vh;
         left: 4vh;
         top: 28vh;
+    }
+}
+@keyframes linked2 {
+    0% {
+        background: url("assets/linkedin\ hover.png");
+        background-size: contain;
+        position: fixed;
+        width: 8vh;
+        height: 8vh;
+        left: 4vh;
+        top: 28vh;
+    }
+    100% {
+        background: url("assets/linkedin\ regular\ \(Freepik\).png");
+        background-size: contain;
+        position: fixed;
+        width: 8vh;
+        height: 8vh;
+        left: 4vh;
+        top: 28vh
+        
     }
 }
 
@@ -76,6 +117,26 @@
         top: 39vh;
     }
 }
+@keyframes em2 {
+    0% {
+        background: url("assets/email\ hover.png");
+        background-size: contain;
+        position: fixed;
+        width: 8vh;
+        height: 8vh;
+        left: 4vh;
+        top: 39vh;
+    }
+    100% {
+        background: url("assets/email\ regular\ \(Ehtisham\ Abid\).png") no-repeat;
+        background-size: contain;
+        position: fixed;
+        width: 8vh;
+        height: 8vh;
+        left: 4vh;
+        top: 39vh;
+    }
+}
 
 @keyframes na {
     0% {
@@ -83,7 +144,21 @@
         text-decoration: none;
     }
     100% {
-        color:var(--main);
+        color:var(--text);
+        text-decoration: none;
+        border-color: var(--main);
+        background: var(--main);
+    }
+}
+@keyframes na2 {
+    0% {
+        color:var(--text);
+        text-decoration: none;
+        border-color: var(--main);
+        background: var(--main);
+    }
+    100% {
+        color:var(--accent);
         text-decoration: none;
     }
 }
@@ -112,7 +187,7 @@
 body {
     background-color: var(--background);
     color: var(--text);
-    animation: fadein 1.5s;
+    animation: fadein 2.5s;
     font-family: 'Lato', sans-serif;
     font-weight: normal;
     font-size: 12vh;
@@ -144,6 +219,14 @@ h4 {
 
 p {
     font-size: 4vh;
+}
+
+li {
+    font-size: 3.5vh;
+    line-height: 7.5vh;
+}
+ul {
+    margin-top: -4%;
 }
 
 /* Shapes */
@@ -224,6 +307,7 @@ p {
     height: 8vh;
     left: 4vh;
     top: 17vh;
+    animation: git2 0.3s;
 
 }
 .github:hover{
@@ -245,6 +329,7 @@ p {
     height: 8vh;
     left: 4vh;
     top: 28vh;
+    animation: linked2 0.3s;
 }
 .linkedin:hover{
     background: url("assets/linkedin\ hover.png");
@@ -265,6 +350,7 @@ p {
     height: 8vh;
     left: 4vh;
     top: 39vh;
+    animation: em2 0.3s;
 }
 .email:hover{
     background: url("assets/email\ hover.png");
@@ -286,26 +372,34 @@ p {
     height: 105vh;
     margin-top: -3%;
     margin-left: 71%;
-    animation: fadein 1.5s;
 }
 
 /* Nav Bar Classes */
 .navi {
     color: var(--accent);
     position: fixed;
-    font-size: 2vh;
+    font-size: 1.75vh;
     font-family: 'Anonymous Pro', mono;
     left:9.5vh;
     text-decoration: none;
     font-style: normal;
+    line-height: 3vh;
+    min-width: 13vh;
+    text-align: center;
+    border-color:var(--accent);
+    border: 0.1vh solid;
+    border-radius: 0.5vh;
+    animation: na2 0.3s;
 }
 .navi:hover {
-    color: var(--main);
     position: fixed;
-    font-size: 2vh;
+    font-size: 1.75vh;
     font-family: 'Anonymous Pro', mono;
     left:9.5vh;
+    color:var(--text);
     text-decoration: none;
+    border-color: var(--main);
+    background: var(--main);
     animation: na 0.3s;
 }
 .remove {
@@ -329,6 +423,9 @@ p {
 .experiences {
     top: 82vh;
 }
+.resume {
+    top: 88vh;
+}
 
 /* Section Classes */
 .title {
@@ -341,7 +438,6 @@ p {
     border: 10vh solid;
     border-color: var(--main);
     text-align: right;
-    animation: fadein 1.5s;
 }
 
 .sect {
@@ -350,7 +446,7 @@ p {
     border: 10vh solid;
     border-color: var(--main);
     width: 132vh;
-    height: 70vh;
+    height: auto;
     margin-top: -8.5%;
     margin-left: 15%;
 }
@@ -364,7 +460,7 @@ p {
     font-size: 4.5vh;
     font-weight: 100;
     text-align: center;
-    margin-top: -29%;
+    margin-top: -25%;
     margin-left: -73.5%;
 }
 .skill_sub {
@@ -380,6 +476,48 @@ p {
     border-radius: 1vh;
 }
 
+.school {
+    font-size: 4.3vh;
+    margin-top: 3%;
+    margin-left: 3%;
+    font-weight: bolder;
+    color: var(--accent);
+}
+.date {
+    font-size: 3vh;
+    margin-top: -5.5%;
+    margin-left: 70%;
+    color: var(--accent);
+}
+.diploma {
+    margin-left:3%;
+    font-size: 3.5vh;
+    margin-top: -1%;
+    color:var(--accent);
+}
+.edu {
+    background: var(--text);
+    border-color: var(--text);
+    border-top-left-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    border: 1vh solid;
+    width: 146.6vh;
+    height: 20vh;
+    margin-left: -5%;
+    margin-top: 5%
+}
+
+.edu_line {
+    border-top-left-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+    border-color: var(--accent) !important;
+    border: 0.3vh solid;
+    width: 145vh;
+    height: 18vh;
+    margin-left: -3.8%;
+    margin-top: -15.5%
+}
+
 /* Miscellaneous */
 .moveup {
     margin-top: -3%;
@@ -393,11 +531,20 @@ p {
 .moveup4 {
     margin-top: -49%;
 }
+.moveup5 {
+    margin-top: -25%;
+}
+.moveup6 {
+    margin-top:-44.2%
+}
 .movedown {
     margin-top: 10%;
 }
 .movedown2 {
     margin-top: 4.8%;
+}
+.moveright {
+    margin-left: 14%;
 }
 .moveleft {
     margin-left: 0%;
@@ -429,7 +576,7 @@ p {
 
 /* 1920px Screen Media Query */
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 1920px) {
     .curve_line {
         height: 74vh;
         width: 40vh;
@@ -502,4 +649,3 @@ p {
         display:none;
     }
 }
-
