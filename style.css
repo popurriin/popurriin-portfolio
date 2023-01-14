@@ -21,7 +21,7 @@
         position: fixed;
         width: 8vh;
         height: 8vh;
-        left: 6.5vh;
+        left: 4vh;
         top: 17vh;
     }
     100% {
@@ -30,7 +30,7 @@
         position: fixed;
         width: 8vh;
         height: 8vh;
-        left: 6.5vh;
+        left: 4vh;
         top: 17vh;
     }
 }
@@ -42,7 +42,7 @@
         position: fixed;
         width: 8vh;
         height: 8vh;
-        left: 6.5vh;
+        left: 4vh;
         top: 28vh
     }
     100% {
@@ -51,7 +51,7 @@
         position: fixed;
         width: 8vh;
         height: 8vh;
-        left: 6.5vh;
+        left: 4vh;
         top: 28vh;
     }
 }
@@ -63,7 +63,7 @@
         position: fixed;
         width: 8vh;
         height: 8vh;
-        left: 6.5vh;
+        left: 4vh;
         top: 39vh;
     }
     100% {
@@ -72,8 +72,19 @@
         position: fixed;
         width: 8vh;
         height: 8vh;
-        left: 6.5vh;
+        left: 4vh;
         top: 39vh;
+    }
+}
+
+@keyframes na {
+    0% {
+        color:var(--accent);
+        text-decoration: none;
+    }
+    100% {
+        color:var(--main);
+        text-decoration: none;
     }
 }
 
@@ -82,7 +93,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 2vh;
+    width: 2.2vh;
     height: 2vh;
     background-color: var(--main);
 }
@@ -111,6 +122,7 @@ h1 {
     font-family: 'Abril Fatface', cursive;
     font-weight: normal;
     font-size: 11vh;
+    margin-top: 0%;
 }
 
 h2 {
@@ -130,12 +142,16 @@ h4 {
     font-size: 3.5vh;
 }
 
+p {
+    font-size: 4vh;
+}
+
 .vl {
     border-left: 2px solid;
     border-color: var(--accent);
     height: 50vh;
     position: fixed;
-    left: 10vh;
+    left: 7.5vh;
     bottom: 0px;
   }
 
@@ -153,7 +169,7 @@ h4 {
     position: fixed;
     width: 8vh;
     height: 8vh;
-    left: 6.5vh;
+    left: 4vh;
     top: 17vh;
 
 }
@@ -163,7 +179,7 @@ h4 {
     position: fixed;
     width: 8vh;
     height: 8vh;
-    left: 6.5vh;
+    left: 4vh;
     top: 17vh;
     animation: git 0.3s;
 }
@@ -174,7 +190,7 @@ h4 {
     position: fixed;
     width: 8vh;
     height: 8vh;
-    left: 6.5vh;
+    left: 4vh;
     top: 28vh;
 }
 .linkedin:hover{
@@ -183,7 +199,7 @@ h4 {
     position: fixed;
     width: 8vh;
     height: 8vh;
-    left: 6.5vh;
+    left: 4vh;
     top: 28vh;
     animation: linked 0.3s;
 }
@@ -194,7 +210,7 @@ h4 {
     position: fixed;
     width: 8vh;
     height: 8vh;
-    left: 6.5vh;
+    left: 4vh;
     top: 39vh;
 }
 .email:hover{
@@ -203,19 +219,62 @@ h4 {
     position: fixed;
     width: 8vh;
     height: 8vh;
-    left: 6.5vh;
+    left: 4vh;
     top: 39vh;
     animation: em 0.3s;
+    line-height: 13vh;
 }
 
 .leaves {
     background: url("assets/leaves.jpg") no-repeat;
     position: static;
     background-size: cover;
-    width: 52.9vh;
+    width: 52.6vh;
     height: 105vh;
     margin-top: -3%;
     margin-left: 71%;
+    animation: fadein 3s;
+}
+
+.navi {
+    color: var(--accent);
+    position: fixed;
+    font-size: 2vh;
+    font-family: 'Anonymous Pro', mono;
+    left:9.5vh;
+    text-decoration: none;
+    font-style: normal;
+}
+.navi:hover {
+    color: var(--main);
+    position: fixed;
+    font-size: 2vh;
+    font-family: 'Anonymous Pro', mono;
+    left:9.5vh;
+    text-decoration: none;
+    animation: na 0.3s;
+}
+.remove {
+    display:inline-flex;
+}
+
+.home {
+    top: 52vh;
+}
+.about {
+    top: 58vh;
+}
+.skills {
+    top: 64vh;
+}
+.education {
+    top: 70vh;
+}
+.projects {
+    top: 76vh;
+}
+.experiences {
+    top: 82vh;
 }
 
 .title {
@@ -228,16 +287,39 @@ h4 {
     border: 10vh solid;
     border-color: var(--main);
     text-align: right;
+    animation: fadein 3s;
 }
 
-.about {
+.sect {
     background: var(--main);
     position:static;
     border: 10vh solid;
     border-color: var(--main);
-    width: 132.9vh;
-    height: 100vh;
-    margin-top: 5%;
+    width: 132vh;
+    height: 70vh;
+    margin-top: 4.5%;
     margin-left: 15%;
-    
+}
+
+.tech {
+    margin-top: -8%;
+    height: auto;
+}
+
+.moveup {
+    margin-top: -3%;
+}
+.movedown {
+    margin-top: 10%;
+}
+.large {
+    margin-top: 5%;
+    font-size: 20vh;
+    line-height: 16vh;
+}
+.ellipsis {
+    color:var(--main);
+    font-size: 20vh;
+    margin-left: 50%;
+    margin-top: -7.5%;
 }
