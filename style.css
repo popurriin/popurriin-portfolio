@@ -14,6 +14,15 @@
     100% {opacity: 1;}
 }
 
+@keyframes link {
+    0% {color:var(--main)}
+    100% {color:var(--highlight)}
+}
+@keyframes link_after {
+    0% {color:var(--highlight)}
+    100% {color:var(--main)}
+}
+
 @keyframes git {
     0% {
         background: url("assets/github\ regular\ \(Pixel\ perfect\).png") no-repeat;
@@ -193,6 +202,19 @@ body {
     font-size: 12vh;
 }
 
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--main);
+    animation: link_after 0.3s;
+}
+a:hover  {
+    text-decoration: none;
+    font-weight: bold;
+    color:var(--highlight);
+    animation: link 0.3s;
+}
+
 h1 {
     font-family: 'Abril Fatface', cursive;
     font-weight: normal;
@@ -254,6 +276,7 @@ ul {
     position: static;
     margin-top: 30%;
     margin-left: -4%;
+    display: flex;
 }
 .curve {
     height: 25vh;
@@ -265,6 +288,7 @@ ul {
     position: static;
     margin-top: -60%;
     margin-left: -4%;
+    display: flex;
 }
 
 .l {
@@ -297,6 +321,7 @@ ul {
     position: absolute;
     margin-top: -24%;
     margin-left: -1.7%;
+    display: block;
 }
 /* Settings for images */
 .github{
@@ -440,6 +465,12 @@ ul {
     text-align: right;
 }
 
+.para {
+    line-height: 7.5vh;
+    margin-top: -5%;
+    font-size: 3.5vh;
+}
+
 .sect {
     background: var(--main);
     position:static;
@@ -476,7 +507,7 @@ ul {
     border-radius: 1vh;
 }
 
-.school {
+.sub_title {
     font-size: 4.3vh;
     margin-top: 3%;
     margin-left: 3%;
@@ -485,15 +516,16 @@ ul {
 }
 .date {
     font-size: 3vh;
-    margin-top: -5.5%;
+    margin-top: -5%;
     margin-left: 70%;
     color: var(--accent);
 }
-.diploma {
+.desc {
     margin-left:3%;
     font-size: 3.5vh;
     margin-top: -1%;
     color:var(--accent);
+    line-height: 6.5vh;
 }
 
 .edu {
@@ -525,7 +557,7 @@ ul {
     border-bottom-left-radius: 5vh;
     border: 1vh solid;
     width: 146.6vh;
-    height: 20vh;
+    height: 50vh;
     margin-left: -5%;
     margin-top: 5%
 }
@@ -535,9 +567,9 @@ ul {
     border-color: var(--accent) !important;
     border: 0.3vh solid;
     width: 145vh;
-    height: 18vh;
+    height: 48vh;
     margin-left: -3.8%;
-    margin-top: -15.5%
+    margin-top: -38%
 }
 
 /* Miscellaneous */
@@ -658,7 +690,23 @@ ul {
 }
 
 /* Phone Media Query*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px){
+    body {
+        display:none;
+    }
+
+    /*
+    .title {
+        background: var(--main);
+        position: static;
+        margin-top: 0%;
+        margin-left: 15%;
+        width: 120vh;
+        height: 60vh;
+        border: 10vh solid;
+        border-color: var(--main);
+        text-align: right;
+    }
     .github {
         display:none;
     }
@@ -677,4 +725,11 @@ ul {
     .leaves {
         display:none;
     }
+    .curve_line {
+        display:none;
+    }
+    .ellipsis {
+        display:none;
+    }
+    */
 }
