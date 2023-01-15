@@ -204,7 +204,7 @@ body {
 
 a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
     color:var(--main);
     animation: link_after 0.3s;
 }
@@ -522,10 +522,11 @@ ul {
 }
 .desc {
     margin-left:3%;
-    font-size: 3.5vh;
+    font-size: 2.5vh;
     margin-top: -1%;
     color:var(--accent);
     line-height: 6.5vh;
+    max-width: 140vh
 }
 
 .edu {
@@ -557,7 +558,7 @@ ul {
     border-bottom-left-radius: 5vh;
     border: 1vh solid;
     width: 146.6vh;
-    height: 50vh;
+    height: 45vh;
     margin-left: -5%;
     margin-top: 5%
 }
@@ -567,9 +568,9 @@ ul {
     border-color: var(--accent) !important;
     border: 0.3vh solid;
     width: 145vh;
-    height: 48vh;
+    height: 43vh;
     margin-left: -3.8%;
-    margin-top: -38%
+    margin-top: -34.4%
 }
 
 /* Miscellaneous */
