@@ -637,6 +637,13 @@ ul {
     margin-top: -7.5%;
 }
 
+.mobile {
+    display: none;
+}
+.desktop {
+    display: block;
+}
+
 /* 1920px Screen Media Query */
 
 @media only screen and (min-width: 1920px) {
@@ -692,45 +699,22 @@ ul {
 
 /* Phone Media Query*/
 @media only screen and (max-width: 1000px){
-    body {
-        display:none;
+    .desktop {
+        display:none !important;
+    }
+    .mobile {
+        display:block !important;
     }
 
-    /*
     .title {
         background: var(--main);
-        position: static;
-        margin-top: 0%;
-        margin-left: 15%;
-        width: 120vh;
+        width: 60vh;
         height: 60vh;
+        margin-top: 25%;
+        align-self: center;
         border: 10vh solid;
         border-color: var(--main);
-        text-align: right;
+        text-align: center;
     }
-    .github {
-        display:none;
-    }
-    .linkedin {
-        display:none;
-    }
-    .email {
-        display:none;
-    }
-    .vl {
-        display:none;
-    }
-    .navi {
-        display:none;
-    }
-    .leaves {
-        display:none;
-    }
-    .curve_line {
-        display:none;
-    }
-    .ellipsis {
-        display:none;
-    }
-    */
+
 }
