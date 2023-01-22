@@ -2,8 +2,7 @@
 ## https://popurriin.github.io
 #### Current To-Dos:
 - Make site mobile-friendly
-- Add CV
 - Add finishing touches!
 #### In the future:
 - Add my tumblr account (if I use it)
-> Last Updated: 2023-01-14
+> Last Updated: 2023-01-18
