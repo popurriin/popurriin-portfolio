@@ -305,10 +305,10 @@ ul {
 }
 
 .l3 {
-    margin-left: 25.5% !important;
+    margin-left: 37% !important;
 }
 .l4 {
-    margin-left: 52.5% !important;
+    margin-left: 74% !important;
 }
 
 .curve_line {
@@ -318,9 +318,9 @@ ul {
     border-top-left-radius: 10vh;
     border-top-right-radius: 10vh;
     border-color: var(--accent);
-    position: absolute;
-    margin-top: -24%;
-    margin-left: -1.7%;
+    position:absolute;
+    bottom: 8vh;
+    left: -3vh;
     display: block;
 }
 /* Settings for images */
@@ -391,7 +391,7 @@ ul {
 
 .leaves {
     background: url("assets/leaves.jpg") no-repeat;
-    position: static;
+    position: relative;
     background-size: cover;
     width: 52.6vh;
     height: 105vh;
@@ -455,7 +455,7 @@ ul {
 /* Section Classes */
 .title {
     background: var(--main);
-    position: static;
+    position: absolute;
     margin-top: -50%;
     margin-left: 15%;
     width: 120vh;
@@ -473,7 +473,7 @@ ul {
 
 .sect {
     background: var(--main);
-    position:static;
+    position:relative;
     border: 10vh solid;
     border-color: var(--main);
     width: 132vh;
