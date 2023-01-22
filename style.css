@@ -647,23 +647,6 @@ ul {
 /* 1920px Screen Media Query */
 
 @media only screen and (min-width: 1920px) {
-    .curve_line {
-        height: 74vh;
-        width: 40vh;
-        border: 0.3vh solid;
-        border-top-left-radius: 10vh;
-        border-top-right-radius: 10vh;
-        border-color: var(--accent);
-        position: absolute;
-        margin-top: -21%;
-        margin-left: -1.5%;
-    }
-    .l3 {
-        margin-left: 22.5% !important;
-    }
-    .l4 {
-        margin-left: 46.5% !important;
-    }
 
     .title {
         background: var(--main);
@@ -688,13 +671,6 @@ ul {
         margin-left: 71%;
         animation: fadein 1.5s;
     }
-
-    .ellipsis {
-        color:var(--main);
-        font-size: 20vh;
-        margin-left: 46.5%;
-        margin-top: -7.5%;
-    }
 }
 
 /* Phone Media Query*/
@@ -709,7 +685,7 @@ ul {
     .title {
         background: var(--main);
         width: 60vh;
-        height: 60vh;
+        height: 75vh;
         margin-top: 25%;
         align-self: center;
         border: 10vh solid;
