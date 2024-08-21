@@ -1,5 +1,5 @@
 # My Portfolio Website
-## https://popurriin.github.io
+## https://purriin.github.io
 #### Current To-Dos:
 - Make site mobile-friendly
 - Add finishing touches!
